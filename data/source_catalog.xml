@@ -1,0 +1,704 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<catalog>
+    <product>
+        <id>1</id>
+        <name> Monitor Dell### </name>
+        <price>N/A</price>
+        <date>04/02/2026</date>
+        <category/>
+    </product>
+    <product>
+        <id>2</id>
+        <name> MonitorDell</name>
+        <price>N/A</price>
+        <date>2025-10-03</date>
+        <category/>
+    </product>
+    <product>
+        <id>3</id>
+        <name/>
+        <price>-386</price>
+        <date>2026/03/11</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>4</id>
+        <name> usb cable </name>
+        <price>-103</price>
+        <date>2025/01/27</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>5</id>
+        <name/>
+        <price>-283</price>
+        <date>01-25-2025</date>
+        <category/>
+    </product>
+    <product>
+        <id>6</id>
+        <name> Printer Canon### </name>
+        <price>2970.99</price>
+        <date>2025-11-03</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>7</id>
+        <name/>
+        <price>N/A</price>
+        <date>21/11/2025</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>8</id>
+        <name>ROUTER TP-LINK </name>
+        <price>-330</price>
+        <date>04-01-2026</date>
+        <category> electronics </category>
+    </product>
+    <product>
+        <id>9</id>
+        <name>LAPTOP HP </name>
+        <price>4886.99</price>
+        <date>11-27-2025</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>10</id>
+        <name> printer canon </name>
+        <price>-80</price>
+        <date>05-16-2026</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>11</id>
+        <name>MONITOR DELL </name>
+        <price>N/A</price>
+        <date>11-24-2025</date>
+        <category/>
+    </product>
+    <product>
+        <id>12</id>
+        <name> Laptop HP### </name>
+        <price>N/A</price>
+        <date>05-30-2025</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>13</id>
+        <name> USB Cable### </name>
+        <price>N/A</price>
+        <date>2025/04/03</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>14</id>
+        <name> laptop hp </name>
+        <price>N/A</price>
+        <date>08-24-2025</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>15</id>
+        <name>SMARTPHONE SAMSUNG </name>
+        <price>N/A</price>
+        <date>2025-19-02</date>
+        <category> electronics </category>
+    </product>
+    <product>
+        <id>16</id>
+        <name>TABLET LENOVO </name>
+        <price>N/A</price>
+        <date>30/01/2026</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>17</id>
+        <name> Smartphone Samsung### </name>
+        <price>N/A</price>
+        <date>2025-30-09</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>18</id>
+        <name> MonitorDell</name>
+        <price>N/A</price>
+        <date>2025-18-07</date>
+        <category/>
+    </product>
+    <product>
+        <id>19</id>
+        <name> SmartphoneSamsung</name>
+        <price/>
+        <date>2025/04/25</date>
+        <category/>
+    </product>
+    <product>
+        <id>20</id>
+        <name> laptop hp </name>
+        <price>14546</price>
+        <date>2026-03-05</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>21</id>
+        <name> MonitorDell</name>
+        <price>3744.99</price>
+        <date>06/05/2025</date>
+        <category/>
+    </product>
+    <product>
+        <id>22</id>
+        <name>ROUTER TP-LINK </name>
+        <price>13305</price>
+        <date>09-30-2025</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>23</id>
+        <name> Gaming Mouse### </name>
+        <price>-375</price>
+        <date>17/10/2025</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>24</id>
+        <name> gaming mouse </name>
+        <price>10685</price>
+        <date>2025-19-08</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>25</id>
+        <name>WEBCAM LOGITECH </name>
+        <price>645.99</price>
+        <date>03-29-2025</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>26</id>
+        <name/>
+        <price>3048.99</price>
+        <date>2025-04-10</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>27</id>
+        <name> LaptopHP</name>
+        <price>N/A</price>
+        <date>01-06-2026</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>28</id>
+        <name/>
+        <price>N/A</price>
+        <date>26/01/2026</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>29</id>
+        <name> usb cable </name>
+        <price>3554.99</price>
+        <date>2025-25-07</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>30</id>
+        <name> Monitor Dell### </name>
+        <price/>
+        <date>2025/01/29</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>31</id>
+        <name> GamingMouse</name>
+        <price>1110.99</price>
+        <date>11-19-2025</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>32</id>
+        <name> LaptopHP</name>
+        <price>4579.99</price>
+        <date>2026-09-05</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>33</id>
+        <name> Smartphone Samsung### </name>
+        <price>N/A</price>
+        <date>2025-24-06</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>34</id>
+        <name> LaptopHP</name>
+        <price>N/A</price>
+        <date>04-22-2025</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>35</id>
+        <name> MechanicalKeyboard</name>
+        <price>4248</price>
+        <date>08-09-2025</date>
+        <category> electronics </category>
+    </product>
+    <product>
+        <id>36</id>
+        <name/>
+        <price/>
+        <date>2025-19-03</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>37</id>
+        <name> gaming mouse </name>
+        <price/>
+        <date>2025-04-02</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>38</id>
+        <name/>
+        <price>8961</price>
+        <date>04-06-2026</date>
+        <category> electronics </category>
+    </product>
+    <product>
+        <id>39</id>
+        <name> usb cable </name>
+        <price>N/A</price>
+        <date>2025/03/17</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>40</id>
+        <name> USBCable</name>
+        <price>-301</price>
+        <date>26/04/2026</date>
+        <category> electronics </category>
+    </product>
+    <product>
+        <id>41</id>
+        <name/>
+        <price>12241</price>
+        <date>2025/07/25</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>42</id>
+        <name> RouterTP-Link</name>
+        <price>144.99</price>
+        <date>2025/05/20</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>43</id>
+        <name> LaptopHP</name>
+        <price>-238</price>
+        <date>2026-20-02</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>44</id>
+        <name/>
+        <price>-401</price>
+        <date>2025/03/07</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>45</id>
+        <name> monitor dell </name>
+        <price>8256</price>
+        <date>2026/01/30</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>46</id>
+        <name/>
+        <price/>
+        <date>02-06-2026</date>
+        <category> electronics </category>
+    </product>
+    <product>
+        <id>47</id>
+        <name>USB CABLE </name>
+        <price>9892</price>
+        <date>03-24-2025</date>
+        <category/>
+    </product>
+    <product>
+        <id>48</id>
+        <name> Router TP-Link### </name>
+        <price>11884</price>
+        <date>09-16-2025</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>49</id>
+        <name> Mechanical Keyboard### </name>
+        <price>14646</price>
+        <date>01-10-2026</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>50</id>
+        <name>MONITOR DELL </name>
+        <price>-308</price>
+        <date>02-18-2025</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>51</id>
+        <name> Smartphone Samsung### </name>
+        <price/>
+        <date>2025-06-10</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>52</id>
+        <name>TABLET LENOVO </name>
+        <price>N/A</price>
+        <date>2025/08/31</date>
+        <category> electronics </category>
+    </product>
+    <product>
+        <id>53</id>
+        <name>LAPTOP HP </name>
+        <price>3172</price>
+        <date>01-24-2025</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>54</id>
+        <name> gaming mouse </name>
+        <price>2613</price>
+        <date>2025/10/02</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>55</id>
+        <name> LaptopHP</name>
+        <price>4928.99</price>
+        <date>03/07/2025</date>
+        <category/>
+    </product>
+    <product>
+        <id>56</id>
+        <name> webcam logitech </name>
+        <price>4015.99</price>
+        <date>08-24-2025</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>57</id>
+        <name> WebcamLogitech</name>
+        <price>12064</price>
+        <date>02-08-2026</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>58</id>
+        <name> monitor dell </name>
+        <price>2701.99</price>
+        <date>2025-25-10</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>59</id>
+        <name> printer canon </name>
+        <price>4889</price>
+        <date>11/04/2026</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>60</id>
+        <name/>
+        <price>N/A</price>
+        <date>24/11/2025</date>
+        <category/>
+    </product>
+    <product>
+        <id>61</id>
+        <name> router tp-link </name>
+        <price>-388</price>
+        <date>01-12-2025</date>
+        <category> electronics </category>
+    </product>
+    <product>
+        <id>62</id>
+        <name/>
+        <price>1405.99</price>
+        <date>2025/09/29</date>
+        <category> electronics </category>
+    </product>
+    <product>
+        <id>63</id>
+        <name> Webcam Logitech### </name>
+        <price>9573</price>
+        <date>02-08-2026</date>
+        <category/>
+    </product>
+    <product>
+        <id>64</id>
+        <name> webcam logitech </name>
+        <price>3482.99</price>
+        <date>08-12-2025</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>65</id>
+        <name> MonitorDell</name>
+        <price>-267</price>
+        <date>2025/05/09</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>66</id>
+        <name/>
+        <price>8881</price>
+        <date>11/11/2025</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>67</id>
+        <name> Mechanical Keyboard### </name>
+        <price>4083.99</price>
+        <date>2025-23-12</date>
+        <category/>
+    </product>
+    <product>
+        <id>68</id>
+        <name> WebcamLogitech</name>
+        <price/>
+        <date>01-23-2026</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>69</id>
+        <name>MECHANICAL KEYBOARD </name>
+        <price>2782.99</price>
+        <date>2026/05/11</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>70</id>
+        <name> smartphone samsung </name>
+        <price>12887</price>
+        <date>2025-08-03</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>71</id>
+        <name> printer canon </name>
+        <price>-22</price>
+        <date>2025-23-12</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>72</id>
+        <name> LaptopHP</name>
+        <price>5284</price>
+        <date>2025/03/29</date>
+        <category> electronics </category>
+    </product>
+    <product>
+        <id>73</id>
+        <name> GamingMouse</name>
+        <price/>
+        <date>2025/12/02</date>
+        <category/>
+    </product>
+    <product>
+        <id>74</id>
+        <name/>
+        <price/>
+        <date>31/05/2025</date>
+        <category/>
+    </product>
+    <product>
+        <id>75</id>
+        <name/>
+        <price>N/A</price>
+        <date>04-29-2025</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>76</id>
+        <name> PrinterCanon</name>
+        <price>1362.99</price>
+        <date>2026-30-04</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>77</id>
+        <name> USB Cable### </name>
+        <price>6856</price>
+        <date>06-05-2025</date>
+        <category/>
+    </product>
+    <product>
+        <id>78</id>
+        <name> RouterTP-Link</name>
+        <price>4205.99</price>
+        <date>09-28-2025</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>79</id>
+        <name> Gaming Mouse### </name>
+        <price>5377</price>
+        <date>06/01/2025</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>80</id>
+        <name>GAMING MOUSE </name>
+        <price>-343</price>
+        <date>06-10-2025</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>81</id>
+        <name>MONITOR DELL </name>
+        <price>10513</price>
+        <date>2025-05-03</date>
+        <category> electronics </category>
+    </product>
+    <product>
+        <id>82</id>
+        <name/>
+        <price>1042.99</price>
+        <date>09-12-2025</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>83</id>
+        <name> gaming mouse </name>
+        <price>9634</price>
+        <date>2026/03/02</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>84</id>
+        <name>TABLET LENOVO </name>
+        <price>899.99</price>
+        <date>02/08/2025</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>85</id>
+        <name> MechanicalKeyboard</name>
+        <price>4626.99</price>
+        <date>2026-26-04</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>86</id>
+        <name> monitor dell </name>
+        <price/>
+        <date>29/03/2025</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>87</id>
+        <name/>
+        <price>4430.99</price>
+        <date>07-24-2025</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>88</id>
+        <name> webcam logitech </name>
+        <price/>
+        <date>11/11/2025</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>89</id>
+        <name> gaming mouse </name>
+        <price>11920</price>
+        <date>2025/05/10</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>90</id>
+        <name> printer canon </name>
+        <price>N/A</price>
+        <date>24/02/2025</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>91</id>
+        <name> Webcam Logitech### </name>
+        <price>-240</price>
+        <date>07-22-2025</date>
+        <category> electronics </category>
+    </product>
+    <product>
+        <id>92</id>
+        <name> router tp-link </name>
+        <price>5201</price>
+        <date>2026/03/26</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>93</id>
+        <name> usb cable </name>
+        <price>506.99</price>
+        <date>2026-18-01</date>
+        <category>Home&Office</category>
+    </product>
+    <product>
+        <id>94</id>
+        <name>WEBCAM LOGITECH </name>
+        <price>N/A</price>
+        <date>03-13-2026</date>
+        <category> electronics </category>
+    </product>
+    <product>
+        <id>95</id>
+        <name/>
+        <price>1908.99</price>
+        <date>01/08/2025</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>96</id>
+        <name>USB CABLE </name>
+        <price/>
+        <date>22/04/2025</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>97</id>
+        <name> Webcam Logitech### </name>
+        <price>N/A</price>
+        <date>2025-24-05</date>
+        <category> electronics </category>
+    </product>
+    <product>
+        <id>98</id>
+        <name> Router TP-Link### </name>
+        <price>13432</price>
+        <date>2025-12-12</date>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>99</id>
+        <name>MONITOR DELL </name>
+        <price>-19</price>
+        <date>03/08/2025</date>
+        <category>123Category</category>
+    </product>
+    <product>
+        <id>100</id>
+        <name> printer canon </name>
+        <price>2179.99</price>
+        <date>2025/12/26</date>
+        <category/>
+    </product>
+</catalog>
