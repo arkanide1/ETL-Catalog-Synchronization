@@ -1,6 +1,6 @@
 import xml.etree.ElementTree as ET
 
-SOURCE_FILE = "data/source_catalog.xml"
+SOURCE_FILE = "../data/source_catalog.xml"
 
 def extract_data():
 
@@ -20,3 +20,4 @@ def extract_data():
         })
 
     return products
+
