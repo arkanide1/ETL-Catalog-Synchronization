@@ -1,21 +1,22 @@
 import xml.etree.ElementTree as ET
 
-# Load the XML file
-tree = ET.parse("../data/source_catalog.xml")
+SOURCE_FILE = "data/source_catalog.xml"
 
-# Get the root element
-root = tree.getroot()
+def extract_data():
 
-# Loop through all products
-for product in root.findall("product"):
+    tree = ET.parse(SOURCE_FILE)
+    root = tree.getroot()
 
-    product_id = product.find("id").text
-    name = product.find("name").text
-    price = product.find("price").text
-    date = product.find("date").text
+    products = []
 
-    print("ID:", product_id)
-    print("Name:", name)
-    print("Price:", price)
-    print("Date:", date)
-    print("-------------------")
+    for product in root.findall("product"):
+
+        products.append({
+            "id": product.findtext("id"),
+            "name": product.findtext("name"),
+            "price": product.findtext("price"),
+            "date": product.findtext("date"),
+            "category": product.findtext("category")
+        })
+
+    return products
