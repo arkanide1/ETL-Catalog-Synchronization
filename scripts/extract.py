@@ -20,4 +20,3 @@ def extract_data():
         })
 
     return products
-
