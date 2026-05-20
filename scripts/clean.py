@@ -8,8 +8,9 @@ from datetime import datetime
 from extract import extract_data
 
 
+# =========================
 # DATE FORMATS
-
+# =========================
 
 DATE_FORMATS = [
     "%Y-%m-%d",
@@ -19,8 +20,9 @@ DATE_FORMATS = [
 ]
 
 
+# =========================
 # CLEAN NAME
-
+# =========================
 
 def clean_name(name: str) -> str | None:
 
@@ -40,12 +42,13 @@ def clean_name(name: str) -> str | None:
     # supprimer doubles espaces
     cleaned = re.sub(r"\s+", " ", cleaned).strip()
 
-    # mettre en Title Case
+    # Title Case
     return cleaned.title()
 
 
+# =========================
 # CLEAN PRICE
-
+# =========================
 
 def clean_price(price: str) -> float | None:
 
@@ -53,7 +56,6 @@ def clean_price(price: str) -> float | None:
     if not price or price.strip().upper() == "N/A":
         return None
 
-    # convertir en float
     try:
         value = float(price.strip())
 
@@ -67,8 +69,9 @@ def clean_price(price: str) -> float | None:
     return value
 
 
+# =========================
 # CLEAN DATE
-
+# =========================
 
 def clean_date(date: str) -> str | None:
 
@@ -82,7 +85,7 @@ def clean_date(date: str) -> str | None:
         try:
             parsed = datetime.strptime(date.strip(), fmt)
 
-            # convertir vers YYYY-MM-DD
+            # format standard
             return parsed.strftime("%Y-%m-%d")
 
         except ValueError:
@@ -90,8 +93,10 @@ def clean_date(date: str) -> str | None:
 
     return None
 
-# CLEAN CATEGORY
 
+# =========================
+# CLEAN CATEGORY
+# =========================
 
 def clean_category(category: str) -> str:
 
@@ -109,214 +114,17 @@ def clean_category(category: str) -> str:
     return cleaned.title()
 
 
-# DETECT ERRORS
-
-
-def detect_errors(products: list) -> list:
-
-    errors = []
-
-    for p in products:
-
-        pid = p.get("id", "unknown")
-
-       
-        # NAME
-       
-
-        name = p.get("name") or ""
-
-        if not name.strip():
-
-            errors.append({
-                "product_id": pid,
-                "field": "name",
-                "value": name,
-                "type": "missing_name"
-            })
-
-        elif re.search(r"[#@!$%^*]", name):
-
-            errors.append({
-                "product_id": pid,
-                "field": "name",
-                "value": name.strip(),
-                "type": "special_characters"
-            })
-
-        elif re.search(r"([a-z])([A-Z])", name):
-
-            errors.append({
-                "product_id": pid,
-                "field": "name",
-                "value": name.strip(),
-                "type": "concatenated_name"
-            })
-
-        
-        # PRICE
-  
-
-        price = p.get("price") or ""
-
-        if not price.strip() or price.strip().upper() == "N/A":
-
-            errors.append({
-                "product_id": pid,
-                "field": "price",
-                "value": price,
-                "type": "invalid_price"
-            })
-
-        else:
-
-            try:
-
-                if float(price) < 0:
-
-                    errors.append({
-                        "product_id": pid,
-                        "field": "price",
-                        "value": price,
-                        "type": "negative_price"
-                    })
-
-            except ValueError:
-
-                errors.append({
-                    "product_id": pid,
-                    "field": "price",
-                    "value": price,
-                    "type": "non_numeric_price"
-                })
-
-     
-        # DATE
-    
-
-        date = p.get("date") or ""
-
-        if not date.strip():
-
-            errors.append({
-                "product_id": pid,
-                "field": "date",
-                "value": date,
-                "type": "missing_date"
-            })
-
-        elif clean_date(date) is None:
-
-            errors.append({
-                "product_id": pid,
-                "field": "date",
-                "value": date,
-                "type": "invalid_date_format"
-            })
-
-
-        # CATEGORY
-       
-
-        category = p.get("category") or ""
-
-        if not category.strip():
-
-            errors.append({
-                "product_id": pid,
-                "field": "category",
-                "value": category,
-                "type": "missing_category"
-            })
-
-        elif "&" in category:
-
-            errors.append({
-                "product_id": pid,
-                "field": "category",
-                "value": category,
-                "type": "unescaped_ampersand"
-            })
-
-        elif re.search(r"^\d", category.strip()):
-
-            errors.append({
-                "product_id": pid,
-                "field": "category",
-                "value": category,
-                "type": "invalid_category_name"
-            })
-
-    return errors
-
-
-# GENERATE ERROR REPORT
-
-
-def generate_error_report(
-    errors: list,
-    output_path: str
-):
-
-    # racine XML
-    root = ET.Element("error_report")
-
-    root.set(
-        "total_errors",
-        str(len(errors))
-    )
-
-    # ajouter erreurs
-    for e in errors:
-
-        node = ET.SubElement(root, "error")
-
-        ET.SubElement(
-            node,
-            "product_id"
-        ).text = str(e["product_id"])
-
-        ET.SubElement(
-            node,
-            "field"
-        ).text = str(e["field"])
-
-        ET.SubElement(
-            node,
-            "value"
-        ).text = str(e["value"])
-
-        ET.SubElement(
-            node,
-            "type"
-        ).text = str(e["type"])
-
-    # formatter XML
-    xml_str = minidom.parseString(
-        ET.tostring(root, encoding="unicode")
-    ).toprettyxml(indent="    ")
-
-    # écrire fichier
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write(xml_str)
-
-    print(f"[✓] error_report.xml généré → {output_path}")
-
-
+# =========================
 # CLEAN DATA
+# =========================
 
+def clean_data(products: list) -> list:
 
-def clean_data(products: list) -> tuple:
+    cleaned_products = []
 
-    # détecter erreurs
-    errors = detect_errors(products)
-
-    cleaned = []
-
-    # nettoyer données
     for p in products:
 
-        cleaned.append({
+        cleaned_products.append({
 
             "id": p.get("id"),
 
@@ -337,11 +145,78 @@ def clean_data(products: list) -> tuple:
             )
         })
 
-    return cleaned, errors
+    return cleaned_products
 
 
+# =========================
+# GENERATE CLEAN XML
+# =========================
+
+def generate_clean_xml(
+    products: list,
+    output_path: str
+):
+
+    # racine XML
+    root = ET.Element("catalogue")
+
+    # ajouter produits
+    for p in products:
+
+        product = ET.SubElement(root, "product")
+
+        ET.SubElement(
+            product,
+            "id"
+        ).text = str(p["id"])
+
+        ET.SubElement(
+            product,
+            "name"
+        ).text = (
+            str(p["name"])
+            if p["name"] is not None
+            else ""
+        )
+
+        ET.SubElement(
+            product,
+            "price"
+        ).text = (
+            str(p["price"])
+            if p["price"] is not None
+            else ""
+        )
+
+        ET.SubElement(
+            product,
+            "date"
+        ).text = (
+            str(p["date"])
+            if p["date"] is not None
+            else ""
+        )
+
+        ET.SubElement(
+            product,
+            "category"
+        ).text = str(p["category"])
+
+    # formatter XML
+    xml_str = minidom.parseString(
+        ET.tostring(root, encoding="unicode")
+    ).toprettyxml(indent="    ")
+
+    # écrire fichier
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(xml_str)
+
+    print(f"[✓] catalogue_clean.xml généré → {output_path}")
+
+
+# =========================
 # MAIN
-
+# =========================
 
 if __name__ == "__main__":
 
@@ -349,28 +224,26 @@ if __name__ == "__main__":
     raw_products = extract_data()
 
     # CLEANING
-    cleaned_products, errors = clean_data(raw_products)
+    cleaned_products = clean_data(raw_products)
 
-    # PATH error_report.xml
+    # PATH XML propre
     output = os.path.join(
         os.path.dirname(__file__),
         '..',
         'data',
-        'error_report.xml'
+        'catalogue_clean.xml'
     )
 
-    # GENERATE XML REPORT
-    generate_error_report(
-        errors,
+    # GENERATE CLEAN XML
+    generate_clean_xml(
+        cleaned_products,
         output_path=output
     )
 
     # DISPLAY
-    print(f"\n[✓] {len(cleaned_products)} produits nettoyés")
-    print(f"[✓] {len(errors)} erreurs détectées\n")
+    print(f"\n[✓] {len(cleaned_products)} produits nettoyés\n")
 
     print("=== APERCU PRODUITS NETTOYES ===\n")
 
     for p in cleaned_products[:5]:
         print(p)
-
