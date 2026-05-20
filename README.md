@@ -31,7 +31,7 @@ The source XML contains several types of incorrect data, including:
 - Special characters (`###`)
 - Missing prices
 - Invalid prices (`N/A`)
-- Negative prices
+- Negative prictection
 - Invalid date formats
 - Mixed date formats
 - Missing categories
@@ -50,3 +50,20 @@ The source XML contains several types of incorrect data, including:
     <date>04/02/2026</date>
     <category />
 </product>
+## Student 2 — Data Cleaning & Error De
+Implemented features:
+
+- Cleaning product names
+- Cleaning prices
+- Normalizing date formats
+- Cleaning categories
+- Detecting invalid or missing data
+- Generating XML error reports
+
+Generated file:
+
+- data/error_report.xml
+
+Main script:
+
+- scripts/Clean.py

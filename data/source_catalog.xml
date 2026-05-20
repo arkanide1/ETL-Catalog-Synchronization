@@ -27,7 +27,7 @@
         <name> usb cable </name>
         <price>-103</price>
         <date>2025/01/27</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>5</id>
@@ -62,14 +62,14 @@
         <name>LAPTOP HP </name>
         <price>4886.99</price>
         <date>11-27-2025</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>10</id>
         <name> printer canon </name>
         <price>-80</price>
         <date>05-16-2026</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>11</id>
@@ -83,7 +83,7 @@
         <name> Laptop HP### </name>
         <price>N/A</price>
         <date>05-30-2025</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>13</id>
@@ -118,7 +118,7 @@
         <name> Smartphone Samsung### </name>
         <price>N/A</price>
         <date>2025-30-09</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>18</id>
@@ -153,7 +153,7 @@
         <name>ROUTER TP-LINK </name>
         <price>13305</price>
         <date>09-30-2025</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>23</id>
@@ -174,7 +174,7 @@
         <name>WEBCAM LOGITECH </name>
         <price>645.99</price>
         <date>03-29-2025</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>26</id>
@@ -223,7 +223,7 @@
         <name> LaptopHP</name>
         <price>4579.99</price>
         <date>2026-09-05</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>33</id>
@@ -237,7 +237,7 @@
         <name> LaptopHP</name>
         <price>N/A</price>
         <date>04-22-2025</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>35</id>
@@ -286,7 +286,7 @@
         <name/>
         <price>12241</price>
         <date>2025/07/25</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>42</id>
@@ -300,7 +300,7 @@
         <name> LaptopHP</name>
         <price>-238</price>
         <date>2026-20-02</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>44</id>
@@ -314,7 +314,7 @@
         <name> monitor dell </name>
         <price>8256</price>
         <date>2026/01/30</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>46</id>
@@ -335,7 +335,7 @@
         <name> Router TP-Link### </name>
         <price>11884</price>
         <date>09-16-2025</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>49</id>
@@ -370,7 +370,7 @@
         <name>LAPTOP HP </name>
         <price>3172</price>
         <date>01-24-2025</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>54</id>
@@ -531,7 +531,7 @@
         <name> PrinterCanon</name>
         <price>1362.99</price>
         <date>2026-30-04</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>77</id>
@@ -552,14 +552,14 @@
         <name> Gaming Mouse### </name>
         <price>5377</price>
         <date>06/01/2025</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>80</id>
         <name>GAMING MOUSE </name>
         <price>-343</price>
         <date>06-10-2025</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>81</id>
@@ -573,7 +573,7 @@
         <name/>
         <price>1042.99</price>
         <date>09-12-2025</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>83</id>
@@ -608,7 +608,7 @@
         <name/>
         <price>4430.99</price>
         <date>07-24-2025</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>88</id>
@@ -622,14 +622,14 @@
         <name> gaming mouse </name>
         <price>11920</price>
         <date>2025/05/10</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>90</id>
         <name> printer canon </name>
         <price>N/A</price>
         <date>24/02/2025</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>91</id>
@@ -643,14 +643,14 @@
         <name> router tp-link </name>
         <price>5201</price>
         <date>2026/03/26</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>93</id>
         <name> usb cable </name>
         <price>506.99</price>
         <date>2026-18-01</date>
-        <category>HomeOffice</category>
+        <category>Home&Office</category>
     </product>
     <product>
         <id>94</id>
