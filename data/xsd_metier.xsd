@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="products">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="product" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <!-- Nom du produit : obligatoire, non vide, max 100 caractères -->
+                            <xs:element name="name" minOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="1" />
+                                        <xs:maxLength value="100" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <!-- Prix : obligatoire, strictement positif -->
+                            <xs:element name="price" minOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                        <xs:minExclusive value="0" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <!-- Catégorie : obligatoire, sans accent dans le nom de balise -->
+                            <xs:element name="categorie" minOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="1" />
+                                        <xs:maxLength value="60" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <!-- Date d'ajout du produit au catalogue : optionnelle, format
+                            YYYY-MM-DD -->
+                            <xs:element name="date_ajout" type="xs:date" minOccurs="0" />
+
+                            <!-- Stock disponible : optionnel, entier >= 0 -->
+                            <xs:element name="stock" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:minInclusive value="0" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <!-- Description : optionnelle, max 200 caractères -->
+                            <xs:element name="description" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="200" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                            <!-- Marque : optionnelle, max 40 caractères -->
+                            <xs:element name="marque" minOccurs="0">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="40" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
+                        </xs:sequence>
+
+                        <!-- ID unique par produit : obligatoire, entier strictement positif -->
+                        <xs:attribute name="id" type="xs:positiveInteger" use="required" />
+
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+        <!-- Contrainte d'unicité sur l'attribut id -->
+        <xs:unique name="unicite_id_produit">
+            <xs:selector xpath="product" />
+            <xs:field xpath="@id" />
+        </xs:unique>
+
+    </xs:element>
+
+</xs:schema>
