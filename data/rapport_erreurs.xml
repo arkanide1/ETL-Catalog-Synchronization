@@ -1,14 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rapport_erreurs xmlns="http://ensias.ma/catalogue/rapport" date_generation="2026-06-10T01:37:57" nb_erreurs="120" nb_produits="100" nb_bloquants="58" statut="ECHEC_VALIDATION">
-    <entete>
-        <projet>ETL Synchronisation de Catalogues</projet>
-        <auteur>Membre 4 - GD ENSIAS 2025/2026</auteur>
-        <fichier_analyse>data/catalogue_clean.xml</fichier_analyse>
-        <xsd_cible>xsd_metier.xsd</xsd_cible>
-        <total_produits>100</total_produits>
-        <total_erreurs>120</total_erreurs>
-        <produits_bloquants>58</produits_bloquants>
-    </entete>
+<link rel="stylesheet" type="text/xsl" href="rapport.xsl" />
+<rapport_erreurs xmlns="http://ensias.ma/catalogue/rapport" date_generation="2026-06-10T02:21:08" nb_erreurs="120" nb_produits="100" nb_bloquants="58" statut="ECHEC_VALIDATION">
     <resume_par_type>
         <type_erreur code="AVERTISSEMENT" count="15" />
         <type_erreur code="CATEGORIE_NON_RESOLUE" count="37" />
