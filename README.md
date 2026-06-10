@@ -37,7 +37,6 @@ The source XML contains several types of incorrect data, including:
 - Missing categories
 - Invalid category names
 - Concatenated product names (`LaptopHP`, `MonitorDell`, etc.)
-
 ---
 
 ## Example of Messy Data
