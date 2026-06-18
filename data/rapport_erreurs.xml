@@ -1,23 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<<<<<<< HEAD
-<rapport_erreurs xmlns="http://ensias.ma/catalogue/rapport" date_generation="2026-06-14T22:29:39" nb_erreurs="120" nb_produits="100" nb_bloquants="58" statut="ECHEC_VALIDATION">
-    <entete>
-        <projet>ETL Synchronisation de Catalogues</projet>
-        <auteur>Membre 4 - GD ENSIAS 2025/2026</auteur>
-        <fichier_analyse>data/catalogue_clean.xml</fichier_analyse>
-        <xsd_cible>xsd_metier.xsd</xsd_cible>
-        <total_produits>100</total_produits>
-        <total_erreurs>120</total_erreurs>
-        <produits_bloquants>58</produits_bloquants>
-    </entete>
-=======
-<?xml-stylesheet type="text/xsl" href="rapport.xsl"?>
-<rapport_erreurs xmlns="http://ensias.ma/catalogue/rapport" date_generation="2026-06-10T02:21:08" nb_erreurs="120" nb_produits="100" nb_bloquants="58" statut="ECHEC_VALIDATION">
->>>>>>> 206b42efb980d41c547ff95865b529aaafb61e06
+<rapport_erreurs xmlns="http://ensias.ma/catalogue/rapport" date_generation="2026-06-18T23:01:41" nb_erreurs="154" nb_produits="100" nb_bloquants="65" statut="ECHEC_VALIDATION">
     <resume_par_type>
-        <type_erreur code="AVERTISSEMENT" count="15" />
+        <type_erreur code="AVERTISSEMENT" count="11" />
         <type_erreur code="CATEGORIE_NON_RESOLUE" count="37" />
-        <type_erreur code="VALEUR_MANQUANTE" count="68" />
+        <type_erreur code="FORMAT_INCORRECT" count="25" />
+        <type_erreur code="VALEUR_MANQUANTE" count="81" />
     </resume_par_type>
     <produits_bloquants>
         <produit_id>1</produit_id>
@@ -37,10 +24,12 @@
         <produit_id>17</produit_id>
         <produit_id>18</produit_id>
         <produit_id>19</produit_id>
+        <produit_id>22</produit_id>
         <produit_id>23</produit_id>
-        <produit_id>26</produit_id>
+        <produit_id>25</produit_id>
         <produit_id>27</produit_id>
         <produit_id>28</produit_id>
+        <produit_id>29</produit_id>
         <produit_id>30</produit_id>
         <produit_id>33</produit_id>
         <produit_id>34</produit_id>
@@ -53,26 +42,31 @@
         <produit_id>43</produit_id>
         <produit_id>44</produit_id>
         <produit_id>46</produit_id>
+        <produit_id>48</produit_id>
         <produit_id>50</produit_id>
         <produit_id>51</produit_id>
         <produit_id>52</produit_id>
+        <produit_id>54</produit_id>
         <produit_id>60</produit_id>
         <produit_id>61</produit_id>
-        <produit_id>62</produit_id>
         <produit_id>65</produit_id>
         <produit_id>66</produit_id>
         <produit_id>68</produit_id>
+        <produit_id>69</produit_id>
+        <produit_id>70</produit_id>
         <produit_id>71</produit_id>
         <produit_id>73</produit_id>
         <produit_id>74</produit_id>
         <produit_id>75</produit_id>
+        <produit_id>76</produit_id>
         <produit_id>80</produit_id>
-        <produit_id>82</produit_id>
+        <produit_id>83</produit_id>
         <produit_id>86</produit_id>
         <produit_id>87</produit_id>
         <produit_id>88</produit_id>
         <produit_id>90</produit_id>
         <produit_id>91</produit_id>
+        <produit_id>93</produit_id>
         <produit_id>94</produit_id>
         <produit_id>95</produit_id>
         <produit_id>96</produit_id>
@@ -123,797 +117,1035 @@
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="7">
+            <produit_id>3</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '03/11/2026'</message>
+            <valeur>03/11/2026</valeur>
+        </anomalie>
+        <anomalie numero="8">
             <produit_id>4</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="8">
+        <anomalie numero="9">
+            <produit_id>4</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '20250127'</message>
+            <valeur>20250127</valeur>
+        </anomalie>
+        <anomalie numero="10">
             <produit_id>5</produit_id>
             <champ>name</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ name est vide</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="9">
+        <anomalie numero="11">
             <produit_id>5</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="10">
+        <anomalie numero="12">
             <produit_id>5</produit_id>
             <champ>category</champ>
             <type>CATEGORIE_NON_RESOLUE</type>
             <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
             <valeur>Unknown</valeur>
         </anomalie>
-        <anomalie numero="11">
+        <anomalie numero="13">
+            <produit_id>5</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '25-01-25'</message>
+            <valeur>25-01-25</valeur>
+        </anomalie>
+        <anomalie numero="14">
+            <produit_id>6</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '25-11-03'</message>
+            <valeur>25-11-03</valeur>
+        </anomalie>
+        <anomalie numero="15">
             <produit_id>7</produit_id>
             <champ>name</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ name est vide</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="12">
+        <anomalie numero="16">
             <produit_id>7</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="13">
+        <anomalie numero="17">
             <produit_id>8</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="14">
+        <anomalie numero="18">
+            <produit_id>8</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '2026/04/01'</message>
+            <valeur>2026/04/01</valeur>
+        </anomalie>
+        <anomalie numero="19">
+            <produit_id>9</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '2025/11/27'</message>
+            <valeur>2025/11/27</valeur>
+        </anomalie>
+        <anomalie numero="20">
+            <produit_id>10</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="21">
             <produit_id>10</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="15">
-            <produit_id>11</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="16">
-            <produit_id>11</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
-        </anomalie>
-        <anomalie numero="17">
-            <produit_id>12</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="18">
-            <produit_id>13</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="19">
-            <produit_id>13</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
-        </anomalie>
-        <anomalie numero="20">
-            <produit_id>14</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="21">
-            <produit_id>15</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
         <anomalie numero="22">
-            <produit_id>15</produit_id>
-            <champ>date</champ>
-            <type>AVERTISSEMENT</type>
-            <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
+            <produit_id>11</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="23">
-            <produit_id>16</produit_id>
+            <produit_id>11</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="24">
-            <produit_id>17</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
+            <produit_id>11</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
         </anomalie>
         <anomalie numero="25">
-            <produit_id>17</produit_id>
-            <champ>date</champ>
-            <type>AVERTISSEMENT</type>
-            <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
+            <produit_id>12</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="26">
-            <produit_id>18</produit_id>
+            <produit_id>12</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="27">
-            <produit_id>18</produit_id>
+            <produit_id>13</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="28">
+            <produit_id>13</produit_id>
             <champ>category</champ>
             <type>CATEGORIE_NON_RESOLUE</type>
             <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
             <valeur>Unknown</valeur>
         </anomalie>
-        <anomalie numero="28">
-            <produit_id>18</produit_id>
-            <champ>date</champ>
-            <type>AVERTISSEMENT</type>
-            <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
         <anomalie numero="29">
-            <produit_id>19</produit_id>
+            <produit_id>14</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="30">
-            <produit_id>19</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
+            <produit_id>15</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="31">
-            <produit_id>20</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
+            <produit_id>15</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="32">
-            <produit_id>21</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
+            <produit_id>15</produit_id>
+            <champ>date</champ>
+            <type>AVERTISSEMENT</type>
+            <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
+            <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="33">
-            <produit_id>23</produit_id>
+            <produit_id>16</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="34">
-            <produit_id>23</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
+            <produit_id>17</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="35">
-            <produit_id>24</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
-        </anomalie>
-        <anomalie numero="36">
-            <produit_id>24</produit_id>
+            <produit_id>17</produit_id>
             <champ>date</champ>
             <type>AVERTISSEMENT</type>
             <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="37">
-            <produit_id>26</produit_id>
-            <champ>name</champ>
+        <anomalie numero="36">
+            <produit_id>18</produit_id>
+            <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
-            <message>le champ name est vide</message>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="38">
-            <produit_id>26</produit_id>
+        <anomalie numero="37">
+            <produit_id>18</produit_id>
             <champ>category</champ>
             <type>CATEGORIE_NON_RESOLUE</type>
             <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
             <valeur>Unknown</valeur>
         </anomalie>
+        <anomalie numero="38">
+            <produit_id>18</produit_id>
+            <champ>date</champ>
+            <type>AVERTISSEMENT</type>
+            <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
         <anomalie numero="39">
-            <produit_id>27</produit_id>
+            <produit_id>19</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="40">
-            <produit_id>27</produit_id>
+            <produit_id>19</produit_id>
             <champ>category</champ>
             <type>CATEGORIE_NON_RESOLUE</type>
             <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
             <valeur>Unknown</valeur>
         </anomalie>
         <anomalie numero="41">
-            <produit_id>28</produit_id>
+            <produit_id>19</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '25-04-25'</message>
+            <valeur>25-04-25</valeur>
+        </anomalie>
+        <anomalie numero="42">
+            <produit_id>20</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
+        </anomalie>
+        <anomalie numero="43">
+            <produit_id>20</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '03/05/2026'</message>
+            <valeur>03/05/2026</valeur>
+        </anomalie>
+        <anomalie numero="44">
+            <produit_id>21</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
+        </anomalie>
+        <anomalie numero="45">
+            <produit_id>22</produit_id>
             <champ>name</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ name est vide</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="42">
-            <produit_id>28</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="43">
-            <produit_id>29</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
-        </anomalie>
-        <anomalie numero="44">
-            <produit_id>29</produit_id>
-            <champ>date</champ>
-            <type>AVERTISSEMENT</type>
-            <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="45">
-            <produit_id>30</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
         <anomalie numero="46">
-            <produit_id>31</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
+            <produit_id>23</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="47">
-            <produit_id>33</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
+            <produit_id>23</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
         </anomalie>
         <anomalie numero="48">
-            <produit_id>33</produit_id>
+            <produit_id>24</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
+        </anomalie>
+        <anomalie numero="49">
+            <produit_id>24</produit_id>
             <champ>date</champ>
             <type>AVERTISSEMENT</type>
             <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="49">
-            <produit_id>34</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="50">
-            <produit_id>36</produit_id>
+            <produit_id>25</produit_id>
             <champ>name</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ name est vide</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="51">
-            <produit_id>36</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="52">
-            <produit_id>36</produit_id>
+            <produit_id>26</produit_id>
             <champ>category</champ>
             <type>CATEGORIE_NON_RESOLUE</type>
             <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
             <valeur>Unknown</valeur>
         </anomalie>
+        <anomalie numero="52">
+            <produit_id>27</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
         <anomalie numero="53">
-            <produit_id>36</produit_id>
+            <produit_id>27</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="54">
+            <produit_id>27</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
+        </anomalie>
+        <anomalie numero="55">
+            <produit_id>28</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="56">
+            <produit_id>29</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="57">
+            <produit_id>29</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
+        </anomalie>
+        <anomalie numero="58">
+            <produit_id>29</produit_id>
             <champ>date</champ>
             <type>AVERTISSEMENT</type>
             <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="54">
-            <produit_id>37</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="55">
-            <produit_id>38</produit_id>
-            <champ>name</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ name est vide</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="56">
-            <produit_id>39</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="57">
-            <produit_id>40</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="58">
-            <produit_id>41</produit_id>
-            <champ>name</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ name est vide</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
         <anomalie numero="59">
-            <produit_id>43</produit_id>
+            <produit_id>30</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="60">
-            <produit_id>43</produit_id>
+            <produit_id>30</produit_id>
             <champ>date</champ>
-            <type>AVERTISSEMENT</type>
-            <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
-            <valeur>(vide)</valeur>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '2025/01/29'</message>
+            <valeur>2025/01/29</valeur>
         </anomalie>
         <anomalie numero="61">
-            <produit_id>44</produit_id>
-            <champ>name</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ name est vide</message>
-            <valeur>(vide)</valeur>
+            <produit_id>31</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
         </anomalie>
         <anomalie numero="62">
-            <produit_id>44</produit_id>
+            <produit_id>33</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="63">
-            <produit_id>46</produit_id>
-            <champ>name</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ name est vide</message>
+            <produit_id>33</produit_id>
+            <champ>date</champ>
+            <type>AVERTISSEMENT</type>
+            <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="64">
-            <produit_id>46</produit_id>
+            <produit_id>34</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="65">
-            <produit_id>47</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
+            <produit_id>35</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '20250809'</message>
+            <valeur>20250809</valeur>
         </anomalie>
         <anomalie numero="66">
-            <produit_id>49</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
+            <produit_id>36</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="67">
-            <produit_id>50</produit_id>
+            <produit_id>36</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="68">
-            <produit_id>51</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
+            <produit_id>36</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
         </anomalie>
         <anomalie numero="69">
-            <produit_id>52</produit_id>
+            <produit_id>36</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '20250615'</message>
+            <valeur>20250615</valeur>
+        </anomalie>
+        <anomalie numero="70">
+            <produit_id>37</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="70">
-            <produit_id>55</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
-        </anomalie>
         <anomalie numero="71">
-            <produit_id>56</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
-        </anomalie>
-        <anomalie numero="72">
-            <produit_id>58</produit_id>
-            <champ>date</champ>
-            <type>AVERTISSEMENT</type>
-            <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="73">
-            <produit_id>59</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
-        </anomalie>
-        <anomalie numero="74">
-            <produit_id>60</produit_id>
+            <produit_id>38</produit_id>
             <champ>name</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ name est vide</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="75">
-            <produit_id>60</produit_id>
+        <anomalie numero="72">
+            <produit_id>38</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '2026/04/06'</message>
+            <valeur>2026/04/06</valeur>
+        </anomalie>
+        <anomalie numero="73">
+            <produit_id>39</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
+        <anomalie numero="74">
+            <produit_id>40</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="75">
+            <produit_id>41</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
         <anomalie numero="76">
-            <produit_id>60</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
+            <produit_id>42</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '20250520'</message>
+            <valeur>20250520</valeur>
         </anomalie>
         <anomalie numero="77">
-            <produit_id>61</produit_id>
+            <produit_id>43</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="78">
-            <produit_id>62</produit_id>
+            <produit_id>43</produit_id>
+            <champ>date</champ>
+            <type>AVERTISSEMENT</type>
+            <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="79">
+            <produit_id>44</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="80">
+            <produit_id>46</produit_id>
             <champ>name</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ name est vide</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="79">
-            <produit_id>63</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
-        </anomalie>
-        <anomalie numero="80">
-            <produit_id>64</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
-        </anomalie>
         <anomalie numero="81">
-            <produit_id>65</produit_id>
+            <produit_id>46</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="82">
-            <produit_id>65</produit_id>
+            <produit_id>47</produit_id>
             <champ>category</champ>
             <type>CATEGORIE_NON_RESOLUE</type>
             <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
             <valeur>Unknown</valeur>
         </anomalie>
         <anomalie numero="83">
-            <produit_id>66</produit_id>
+            <produit_id>48</produit_id>
             <champ>name</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ name est vide</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="84">
-            <produit_id>66</produit_id>
+            <produit_id>49</produit_id>
             <champ>category</champ>
             <type>CATEGORIE_NON_RESOLUE</type>
             <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
             <valeur>Unknown</valeur>
         </anomalie>
         <anomalie numero="85">
-            <produit_id>67</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
-        </anomalie>
-        <anomalie numero="86">
-            <produit_id>67</produit_id>
-            <champ>date</champ>
-            <type>AVERTISSEMENT</type>
-            <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
+            <produit_id>50</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
+        <anomalie numero="86">
+            <produit_id>50</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '25-02-18'</message>
+            <valeur>25-02-18</valeur>
+        </anomalie>
         <anomalie numero="87">
-            <produit_id>68</produit_id>
+            <produit_id>51</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="88">
-            <produit_id>70</produit_id>
+            <produit_id>52</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="89">
+            <produit_id>54</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="90">
+            <produit_id>55</produit_id>
             <champ>category</champ>
             <type>CATEGORIE_NON_RESOLUE</type>
             <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
             <valeur>Unknown</valeur>
         </anomalie>
-        <anomalie numero="89">
-            <produit_id>71</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="90">
-            <produit_id>71</produit_id>
-            <champ>date</champ>
-            <type>AVERTISSEMENT</type>
-            <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
         <anomalie numero="91">
-            <produit_id>73</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
+            <produit_id>55</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '03-07-2025'</message>
+            <valeur>03-07-2025</valeur>
         </anomalie>
         <anomalie numero="92">
-            <produit_id>73</produit_id>
+            <produit_id>56</produit_id>
             <champ>category</champ>
             <type>CATEGORIE_NON_RESOLUE</type>
             <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
             <valeur>Unknown</valeur>
         </anomalie>
         <anomalie numero="93">
-            <produit_id>74</produit_id>
-            <champ>name</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ name est vide</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="94">
-            <produit_id>74</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="95">
-            <produit_id>74</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
-        </anomalie>
-        <anomalie numero="96">
-            <produit_id>75</produit_id>
-            <champ>name</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ name est vide</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="97">
-            <produit_id>75</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="98">
-            <produit_id>76</produit_id>
+            <produit_id>58</produit_id>
             <champ>date</champ>
             <type>AVERTISSEMENT</type>
             <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="99">
-            <produit_id>77</produit_id>
+        <anomalie numero="94">
+            <produit_id>59</produit_id>
             <champ>category</champ>
             <type>CATEGORIE_NON_RESOLUE</type>
             <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
             <valeur>Unknown</valeur>
         </anomalie>
+        <anomalie numero="95">
+            <produit_id>60</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="96">
+            <produit_id>60</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="97">
+            <produit_id>60</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
+        </anomalie>
+        <anomalie numero="98">
+            <produit_id>60</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '24-11-2025'</message>
+            <valeur>24-11-2025</valeur>
+        </anomalie>
+        <anomalie numero="99">
+            <produit_id>61</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
         <anomalie numero="100">
-            <produit_id>78</produit_id>
+            <produit_id>63</produit_id>
             <champ>category</champ>
             <type>CATEGORIE_NON_RESOLUE</type>
             <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
             <valeur>Unknown</valeur>
         </anomalie>
         <anomalie numero="101">
-            <produit_id>80</produit_id>
+            <produit_id>64</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
+        </anomalie>
+        <anomalie numero="102">
+            <produit_id>65</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="102">
-            <produit_id>82</produit_id>
-            <champ>name</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ name est vide</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
         <anomalie numero="103">
-            <produit_id>84</produit_id>
+            <produit_id>65</produit_id>
             <champ>category</champ>
             <type>CATEGORIE_NON_RESOLUE</type>
             <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
             <valeur>Unknown</valeur>
         </anomalie>
         <anomalie numero="104">
-            <produit_id>85</produit_id>
+            <produit_id>65</produit_id>
             <champ>date</champ>
-            <type>AVERTISSEMENT</type>
-            <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
-            <valeur>(vide)</valeur>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '05/09/2025'</message>
+            <valeur>05/09/2025</valeur>
         </anomalie>
         <anomalie numero="105">
-            <produit_id>86</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="106">
-            <produit_id>87</produit_id>
+            <produit_id>66</produit_id>
             <champ>name</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ name est vide</message>
             <valeur>(vide)</valeur>
         </anomalie>
+        <anomalie numero="106">
+            <produit_id>66</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
+        </anomalie>
         <anomalie numero="107">
-            <produit_id>88</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
+            <produit_id>67</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
         </anomalie>
         <anomalie numero="108">
-            <produit_id>90</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
+            <produit_id>67</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '06/15/2025'</message>
+            <valeur>06/15/2025</valeur>
         </anomalie>
         <anomalie numero="109">
-            <produit_id>91</produit_id>
+            <produit_id>68</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="110">
-            <produit_id>93</produit_id>
-            <champ>date</champ>
-            <type>AVERTISSEMENT</type>
-            <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="111">
-            <produit_id>94</produit_id>
-            <champ>price</champ>
-            <type>VALEUR_MANQUANTE</type>
-            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
-            <valeur>(vide)</valeur>
-        </anomalie>
-        <anomalie numero="112">
-            <produit_id>95</produit_id>
+            <produit_id>69</produit_id>
             <champ>name</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ name est vide</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="113">
-            <produit_id>95</produit_id>
+        <anomalie numero="111">
+            <produit_id>70</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="112">
+            <produit_id>70</produit_id>
             <champ>category</champ>
             <type>CATEGORIE_NON_RESOLUE</type>
             <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
             <valeur>Unknown</valeur>
         </anomalie>
-        <anomalie numero="114">
-            <produit_id>96</produit_id>
+        <anomalie numero="113">
+            <produit_id>71</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
+        <anomalie numero="114">
+            <produit_id>71</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '15-06-2025'</message>
+            <valeur>15-06-2025</valeur>
+        </anomalie>
         <anomalie numero="115">
-            <produit_id>96</produit_id>
-            <champ>category</champ>
-            <type>CATEGORIE_NON_RESOLUE</type>
-            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
-            <valeur>Unknown</valeur>
+            <produit_id>72</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '20250329'</message>
+            <valeur>20250329</valeur>
         </anomalie>
         <anomalie numero="116">
-            <produit_id>97</produit_id>
+            <produit_id>73</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
         <anomalie numero="117">
-            <produit_id>97</produit_id>
+            <produit_id>73</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
+        </anomalie>
+        <anomalie numero="118">
+            <produit_id>73</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '02.12.2025'</message>
+            <valeur>02.12.2025</valeur>
+        </anomalie>
+        <anomalie numero="119">
+            <produit_id>74</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="120">
+            <produit_id>74</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="121">
+            <produit_id>74</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
+        </anomalie>
+        <anomalie numero="122">
+            <produit_id>74</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '05/31/2025'</message>
+            <valeur>05/31/2025</valeur>
+        </anomalie>
+        <anomalie numero="123">
+            <produit_id>75</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="124">
+            <produit_id>76</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="125">
+            <produit_id>76</produit_id>
             <champ>date</champ>
             <type>AVERTISSEMENT</type>
             <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="118">
+        <anomalie numero="126">
+            <produit_id>77</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
+        </anomalie>
+        <anomalie numero="127">
+            <produit_id>78</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
+        </anomalie>
+        <anomalie numero="128">
+            <produit_id>78</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '28-09-2025'</message>
+            <valeur>28-09-2025</valeur>
+        </anomalie>
+        <anomalie numero="129">
+            <produit_id>80</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="130">
+            <produit_id>81</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '25-05-03'</message>
+            <valeur>25-05-03</valeur>
+        </anomalie>
+        <anomalie numero="131">
+            <produit_id>83</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="132">
+            <produit_id>84</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
+        </anomalie>
+        <anomalie numero="133">
+            <produit_id>85</produit_id>
+            <champ>date</champ>
+            <type>AVERTISSEMENT</type>
+            <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="134">
+            <produit_id>86</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="135">
+            <produit_id>86</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="136">
+            <produit_id>87</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="137">
+            <produit_id>88</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="138">
+            <produit_id>90</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="139">
+            <produit_id>90</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="140">
+            <produit_id>91</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="141">
+            <produit_id>93</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="142">
+            <produit_id>93</produit_id>
+            <champ>date</champ>
+            <type>AVERTISSEMENT</type>
+            <message>date vide, la balise date_ajout sera absente dans le XML cible</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="143">
+            <produit_id>94</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="144">
+            <produit_id>95</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="145">
+            <produit_id>95</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
+        </anomalie>
+        <anomalie numero="146">
+            <produit_id>96</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="147">
+            <produit_id>96</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="148">
+            <produit_id>96</produit_id>
+            <champ>category</champ>
+            <type>CATEGORIE_NON_RESOLUE</type>
+            <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
+            <valeur>Unknown</valeur>
+        </anomalie>
+        <anomalie numero="149">
+            <produit_id>97</produit_id>
+            <champ>price</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="150">
+            <produit_id>97</produit_id>
+            <champ>date</champ>
+            <type>FORMAT_INCORRECT</type>
+            <message>format de date invalide, attendu YYYY-MM-DD, recu : '25-06-15'</message>
+            <valeur>25-06-15</valeur>
+        </anomalie>
+        <anomalie numero="151">
+            <produit_id>99</produit_id>
+            <champ>name</champ>
+            <type>VALEUR_MANQUANTE</type>
+            <message>le champ name est vide</message>
+            <valeur>(vide)</valeur>
+        </anomalie>
+        <anomalie numero="152">
             <produit_id>99</produit_id>
             <champ>price</champ>
             <type>VALEUR_MANQUANTE</type>
             <message>le champ price est vide, ce produit sera bloque lors de la transformation</message>
             <valeur>(vide)</valeur>
         </anomalie>
-        <anomalie numero="119">
+        <anomalie numero="153">
             <produit_id>99</produit_id>
             <champ>category</champ>
             <type>CATEGORIE_NON_RESOLUE</type>
             <message>categorie 'Unknown' : la valeur source etait invalide ou absente</message>
             <valeur>Unknown</valeur>
         </anomalie>
-        <anomalie numero="120">
+        <anomalie numero="154">
             <produit_id>100</produit_id>
             <champ>category</champ>
             <type>CATEGORIE_NON_RESOLUE</type>
