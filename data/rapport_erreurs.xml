@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="rapport.xsl"?>
 <rapport_erreurs xmlns="http://ensias.ma/catalogue/rapport" date_generation="2026-06-18T23:01:41" nb_erreurs="154" nb_produits="100" nb_bloquants="65" statut="ECHEC_VALIDATION">
     <resume_par_type>
         <type_erreur code="AVERTISSEMENT" count="11" />
