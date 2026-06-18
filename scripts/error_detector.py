@@ -134,15 +134,6 @@ def generate_error_report(errors, total_products, output_path):
         "nb_bloquants": str(len(blocked_ids)),
         "statut": statut
     })
-    entete = ET.SubElement(rapport, "entete")
-    ET.SubElement(entete, "projet").text = "ETL Synchronisation de Catalogues"
-    ET.SubElement(entete, "auteur").text = "Membre 4 - GD ENSIAS 2025/2026"
-    ET.SubElement(entete, "fichier_analyse").text = "data/catalogue_clean.xml"
-    ET.SubElement(entete, "xsd_cible").text = "xsd_metier.xsd"
-    ET.SubElement(entete, "total_produits").text = str(total_products)
-    ET.SubElement(entete, "total_erreurs").text = str(nb_errors)
-    ET.SubElement(entete, "produits_bloquants").text = str(len(blocked_ids))
-
     resume = ET.SubElement(rapport, "resume_par_type")
     type_counts = {}
     for e in errors:

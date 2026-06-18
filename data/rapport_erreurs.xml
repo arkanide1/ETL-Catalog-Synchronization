@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
+<<<<<<< HEAD
 <rapport_erreurs xmlns="http://ensias.ma/catalogue/rapport" date_generation="2026-06-14T22:29:39" nb_erreurs="120" nb_produits="100" nb_bloquants="58" statut="ECHEC_VALIDATION">
     <entete>
         <projet>ETL Synchronisation de Catalogues</projet>
@@ -9,6 +10,10 @@
         <total_erreurs>120</total_erreurs>
         <produits_bloquants>58</produits_bloquants>
     </entete>
+=======
+<?xml-stylesheet type="text/xsl" href="rapport.xsl"?>
+<rapport_erreurs xmlns="http://ensias.ma/catalogue/rapport" date_generation="2026-06-10T02:21:08" nb_erreurs="120" nb_produits="100" nb_bloquants="58" statut="ECHEC_VALIDATION">
+>>>>>>> 206b42efb980d41c547ff95865b529aaafb61e06
     <resume_par_type>
         <type_erreur code="AVERTISSEMENT" count="15" />
         <type_erreur code="CATEGORIE_NON_RESOLUE" count="37" />
