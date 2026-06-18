@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rapport_erreurs xmlns="http://ensias.ma/catalogue/rapport" date_generation="2026-06-10T01:37:57" nb_erreurs="120" nb_produits="100" nb_bloquants="58" statut="ECHEC_VALIDATION">
+<rapport_erreurs xmlns="http://ensias.ma/catalogue/rapport" date_generation="2026-06-14T22:29:39" nb_erreurs="120" nb_produits="100" nb_bloquants="58" statut="ECHEC_VALIDATION">
     <entete>
         <projet>ETL Synchronisation de Catalogues</projet>
         <auteur>Membre 4 - GD ENSIAS 2025/2026</auteur>
