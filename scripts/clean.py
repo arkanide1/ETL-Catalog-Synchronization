@@ -8,9 +8,9 @@ from datetime import datetime
 from extract import extract_data
 
 
-# =========================
+  
 # DATE FORMATS
-# =========================
+
 
 DATE_FORMATS = [
     "%Y-%m-%d",
@@ -20,9 +20,9 @@ DATE_FORMATS = [
 ]
 
 
-# =========================
+
 # CLEAN NAME
-# =========================
+  
 
 def clean_name(name: str) -> str | None:
 
@@ -46,9 +46,9 @@ def clean_name(name: str) -> str | None:
     return cleaned.title()
 
 
-# =========================
+  
 # CLEAN PRICE
-# =========================
+
 
 def clean_price(price: str) -> float | None:
 
@@ -69,9 +69,9 @@ def clean_price(price: str) -> float | None:
     return value
 
 
-# =========================
+
 # CLEAN DATE
-# =========================
+  
 
 def clean_date(date: str) -> str | None:
 
@@ -94,9 +94,9 @@ def clean_date(date: str) -> str | None:
     return None
 
 
-# =========================
+
 # CLEAN CATEGORY
-# =========================
+  
 
 def clean_category(category: str) -> str:
 
@@ -114,9 +114,9 @@ def clean_category(category: str) -> str:
     return cleaned.title()
 
 
-# =========================
+
 # CLEAN DATA
-# =========================
+ 
 
 def clean_data(products: list) -> list:
 
@@ -148,9 +148,9 @@ def clean_data(products: list) -> list:
     return cleaned_products
 
 
-# =========================
+ 
 # GENERATE CLEAN XML
-# =========================
+
 
 def generate_clean_xml(
     products: list,
@@ -214,9 +214,9 @@ def generate_clean_xml(
     print(f"[✓] catalogue_clean.xml généré → {output_path}")
 
 
-# =========================
+
 # MAIN
-# =========================
+
 
 if __name__ == "__main__":
 
